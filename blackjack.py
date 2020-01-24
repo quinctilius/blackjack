@@ -1,6 +1,8 @@
 # Dictionary of card value
 # Aces care currently only one
 
+import random
+
 # Hearts
 ace_hearts = "Ace of Hearts"
 two_hearts = "2 of Hearts"
@@ -123,3 +125,13 @@ print(two_hearts, ace_hearts, jack_hearts, ace_diamonds, king_diamonds)
 
 print(hand_value)
 
+print("Test of random function")
+
+cards = [ace_hearts, ten_clubs, nine_clubs, eights_clubs, seven_clubs]
+starting_hand = random.sample(cards, 2)
+
+print(starting_hand)
+
+print(starting_hand[0])
+
+test = card_values[starting_hand]
